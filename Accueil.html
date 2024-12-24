@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ENSET MOHAMMEDIA</title>
+    <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Marcellus:wght@400&display=swap" rel="stylesheet">
+   <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  <style>
+    body {
+        padding-top: 56px; /* Space for fixed navbar */
+    }
+    
+    .footer {
+        background-color: #343a40;
+        color: white;
+        padding: 20px 0;
+        text-align: center;
+    }
+    .card {
+        margin: 20px 0;
+    }
+    .navbar-nav .nav-item {
+        margin-right: 100px; 
+    }
+    .rounded-circle{
+        margin: 90px;
+        margin-bottom: 30px;
+        margin-top: 20px;
+    }
+    .txt {
+        margin-left: 100px;
+    }
+    .ser{
+        text-align: center;
+    }
+    .card{
+        height: 500px;
+    }
+    @media(min-width: 768px) and (max-width: 991.98px){
+            .cards .row{
+              display: grid;
+              gap: 32px;
+            }
+            .cards .row .col-md-4{
+              width: 100%;
+            }
+            .cards .row .col-md-4 .card{
+              display: grid;
+              grid-template-columns: 1fr 1fr;
+            }
+            .cards .row .col-md-4 .card img{
+               height: 100%;
+            }
+          
+        }
+
+</style>
+</head>
+<body>
+
+  <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+    <div class="container">
+      <!-- Logo -->
+      <a class="navbar-brand fs-5" href="#">
+        <img src="https://www.enset-media.ac.ma/sites/default/files/enset_mohammedia_0.png" alt="Logo" class="d-inline-block align-text-top" width="100px">
+      </a>
+
+      <!-- Toggler Button (Hamburger Menu) -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- Collapsible Menu -->
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link active fs-5" aria-current="page" href="#">Accueil</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link fs-5" href="#service">Services</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link fs-5" href="#contact">Contact</a>
+          </li>
+        </ul>
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Rechercher..." aria-label="Search" style="width: 200px;">
+          <button type="submit" class="btn btn-primary ms-2"><img src="https://img.icons8.com/?size=100&id=88638&format=png&color=000000" alt="btn-search" width="25px"></button>
+        </form>
+      </div>
+    </div>
+  </nav>
+
+<!-- Carousel (Slider) -->
+<div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="https://cdn.pixabay.com/photo/2021/02/02/12/17/covid-19-5973779_1280.jpg" class="d-block w-100" alt="" style="width:100%; height: 400px;">
+      </div>
+      <div class="carousel-item">
+        <img src="https://cdn.pixabay.com/photo/2021/04/16/13/11/seo-6183542_1280.jpg" class="d-block w-100" alt="" style="width:100%; height: 400px;">
+      </div>
+      <div class="carousel-item">
+        <img src="https://cdn.pixabay.com/photo/2017/07/31/11/21/people-2557396_1280.jpg" class="d-block w-100" alt="" style="width:100%; height: 400px;">
+      </div>
+      <div class="carousel-item">
+        <img src="https://cdn.pixabay.com/photo/2018/05/31/04/36/class-3443169_1280.jpg" class="d-block w-100" alt="" style="width:100%; height: 400px;">
+      </div>
+
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+<!-- Cards Section -->
+<div class="cards container mt-5" id="service">
+  <h2 class="ser">Notre Services</h2>
+    <div class="row g-4">
+      <!-- Card 1 -->
+      <div class="col-md-4">
+        <div class="card h-100">
+          <img src="https://cdn.pixabay.com/photo/2016/12/15/20/29/tablet-1910018_1280.jpg" class="card-img-top" alt="Card Image 1">
+          <div class="card-body">
+            <h5 class="card-title">Master Management</h5>
+            <p class="card-text">Le <b> Master Management </b> est une formation de niveau Bac+5 qui vise à former des professionnels capables de gérer et d'optimiser les projets au sein des entreprises...</p>
+            <a href="#" class="btn btn-primary">Lire la suite</a>  
+        </div>
+          
+        </div>
+      </div>
+   
+
+        <!-- Card 2 -->
+             
+              <div class="col-md-4">
+                <div class="card h-100">
+                  <img src="https://cdn.pixabay.com/photo/2019/12/18/13/56/glasses-4704055_1280.jpg" class="card-img-top" alt="Card Image 1">
+                  <div class="card-body">
+                    <h5 class="card-title">Ingénieur d'état</h5>
+                    <p class="card-text">Le <b> Diplôme d'Ingénieur d'État </b> est une formation supérieure au Maroc, généralement dispensée sur une durée de cinq ans après le baccalauréat.Ce cursus est structuré en deux cycles...</p>
+                    <a href="#" class="btn btn-primary">Lire la suite</a>  
+                </div>
+                  
+                </div>
+              </div>
+
+        <!-- Card 3 -->
+
+        <div class="col-md-4">
+            <div class="card h-100">
+              <img src="https://cdn.pixabay.com/photo/2021/01/21/15/54/books-5937716_1280.jpg" class="card-img-top" alt="Card Image 1">
+              <div class="card-body">
+                <h5 class="card-title">Licence d'Education</h5>
+                <p class="card-text">La <b>Licence en Sciences de l'Éducation</b> est un diplôme national de premier cycle universitaire en France, d'une durée de trois ans, qui prépare les étudiants aux métiers liés à l'éducation et à la formation...</p>
+                <a href="#" class="btn btn-primary">Lire la suite</a>  
+            </div>
+              
+            </div>
+          </div>
+
+    </div> <!-- End of row -->
+</div> <!-- End of container -->
+
+<!-- Our Team Section -->
+<div class="container mt-4"> 
+    <h2 class="ser">Notre Equipe!</h2> 
+    <div class="row"> 
+        <!-- Team Member 1 --> 
+        <div class="col-md-4 team-member"> 
+            <img src="https://cdn.pixabay.com/photo/2018/01/22/07/31/portrait-3098319_1280.jpg" class="rounded-circle" alt="Team Member 2" width="170px"> 
+            <h5 class="txt">EL RADI HOUDA<h5> 
+            <p class="txt">PDG<p> 
+        </div> 
+
+        <!-- Team Member 2 --> 
+        <div class="col-md-4 team-member"> 
+            <img src="https://images.unsplash.com/photo-1517462964-21fdcec3f25b?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="rounded-circle" alt="Team Member 2" width="170px" height="250px"> 
+            <h5 class="txt">ALEXA SMITH<h5> 
+            <p class="txt">Dev Senior<p> 
+        </div> 
+
+        <!-- Team Member 3 --> 
+        <div class="col-md-4 team-member"> 
+            <img src="https://images.unsplash.com/photo-1624395213043-fa2e123b2656?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="rounded-circle" alt="Team Member 3" width="170px" height="250px"> 
+            <h5 class="txt">EL ASSRI NOURDINE<h5> 
+            <p class="txt">Dev Junior<p> 
+        </div> 
+
+    </div> 
+</div> 
+
+<!-- Footer -->
+<footer class="p-3 mb-2 bg-body-secondary" id="contact">
+    <div class="container">
+        <div class="row">
+            <!-- Section Contact avec icônes -->
+            <div class="col-md-6 mb-4">
+                <h3 class="footer-heading text-uppercase mb-4">Contact</h3>
+                <ul class="list-unstyled">
+                    <li class="d-flex align-items-center mb-3">
+                        <img src="https://img.icons8.com/ios-filled/24/ffffff/email.png" alt="Email Icon"
+                            class="icon me-3">
+                        <p class="mb-0">eseg@enset-media.ac.ma</p>
+                    </li>
+                    <li class="d-flex align-items-center mb-3">
+                        <img src="https://img.icons8.com/ios-filled/24/ffffff/phone.png" alt="Phone Icon"
+                            class="icon me-3">
+                        <p class="mb-0">+212 655 09 75 46</p>
+                    </li>
+                    <li class="d-flex align-items-center">
+                        <img src="https://img.icons8.com/ios-filled/24/ffffff/marker.png" alt="Location Icon"
+                            class="icon me-3">
+                        <p class="mb-0">ENSET Mohammedia,Bd Hassan II,Mohammédia 28830</p>
+                    </li>
+                </ul>
+            </div>
+     <!-- Section Google Maps -->
+     <div class="col-md-6 mb-4">
+        <div class="ratio ratio-16x9">
+            <!-- Intégration de Google Maps -->
+            <iframe width="90%" height="90%" loading="lazy" allowfullscreen
+                src="https://www.google.com/maps/embed/v1/place?key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8&q=ENSET%20Mohammedia&zoom=10&maptype=roadmap"></iframe>
+        </div>
+    </div>
+    <div class="text-center mt-4">
+    <p class="mb-0 text-muted">&copy;2024 ENSET Mohammedia. Tous droits réservés.</p>
+    </div>
+</footer>
+</html>
